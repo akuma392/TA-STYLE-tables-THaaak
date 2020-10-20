@@ -113,13 +113,21 @@ header{
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 999;
+    background-color: rgba(255,255, 255, 0.1);
 }
 h2{
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #28313c;
+    color: white;
 
+}
+header a{
+    color: white;
+}
+header a:hover{
+    color: var(--primary-color);
 }
 h2 span{
     color: var(--primary-color);
@@ -130,6 +138,12 @@ h2 span{
 }
 header button{
     margin-left: 10px;
+}
+.active a{
+    color: var(--primary-color);
+}
+.active{
+    color: var(--primary-color) ;
 }
 /* main */
 
@@ -144,13 +158,16 @@ header button{
   top: 0;
 
 }
-.hero video{
-    max-width: 100%;
-    height: 100vh;
+.hero{
     position: relative;
 }
+.hero video{
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
 h1{
-    font-size: 40px;
+    font-size: 60px;
     text-transform: uppercase;
     font-weight: 900;
     margin: 10px 0;
@@ -333,8 +350,10 @@ h3{
     
 }
 .trainer-detail{
-    flex: 0 1 25%;
+    flex: 0 1 28%;
     margin-top: 40px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 .trainer-detail img{
     width: 100%;
